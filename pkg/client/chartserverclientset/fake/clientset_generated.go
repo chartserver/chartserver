@@ -18,9 +18,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/charthq/chartserver/pkg/client/chartserverclientset"
-	chartserverv1beta1 "github.com/charthq/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1"
-	fakechartserverv1beta1 "github.com/charthq/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1/fake"
+	clientset "github.com/chartserver/chartserver/pkg/client/chartserverclientset"
+	chartserverv1beta1 "github.com/chartserver/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1"
+	fakechartserverv1beta1 "github.com/chartserver/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

@@ -11,7 +11,7 @@ test: generate fmt vet manifests
 
 .PHONY: manager
 manager: generate fmt vet
-	go build -o bin/manager github.com/charthq/chartserver/cmd/manager
+	go build -o bin/manager github.com/chartserver/chartserver/cmd/manager
 
 .PHONY: run
 run: generate fmt vet
@@ -41,7 +41,7 @@ vet:
 .PHONY: generate
 generate: controller-gen # client-gen
 	controller-gen object:headerFile=./hack/boilerplate.go.txt paths=./pkg/apis/...
-	# client-gen --output-package=github.com/charthq/chartserver/pkg/client --clientset-name chartserverclientset --input-base github.com/charthq/chartserver/pkg/apis --input chartserver/v1beta1 -h ./hack/boilerplate.go.txt
+	# client-gen --output-package=github.com/chartserver/chartserver/pkg/client --clientset-name chartserverclientset --input-base github.com/chartserver/chartserver/pkg/apis --input chartserver/v1beta1 -h ./hack/boilerplate.go.txt
 
 # find or download controller-gen
 # download controller-gen if necessary

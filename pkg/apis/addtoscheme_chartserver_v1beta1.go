@@ -17,7 +17,7 @@ limitations under the License.
 package apis
 
 import (
-	"github.com/charthq/chartserver/pkg/apis/chartserver/v1beta1"
+	"github.com/chartserver/chartserver/pkg/apis/chartserver/v1beta1"
 )
 
 func init() {

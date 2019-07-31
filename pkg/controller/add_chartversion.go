@@ -17,7 +17,7 @@ limitations under the License.
 package controller
 
 import (
-	"github.com/charthq/chartserver/pkg/controller/chartversion"
+	"github.com/chartserver/chartserver/pkg/controller/chartversion"
 )
 
 func init() {

@@ -18,7 +18,7 @@ limitations under the License.
 package scheme
 
 import (
-	chartserverv1beta1 "github.com/charthq/chartserver/pkg/apis/chartserver/v1beta1"
+	chartserverv1beta1 "github.com/chartserver/chartserver/pkg/apis/chartserver/v1beta1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

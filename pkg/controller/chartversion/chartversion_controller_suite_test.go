@@ -23,7 +23,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/charthq/chartserver/pkg/apis"
+	"github.com/chartserver/chartserver/pkg/apis"
 	"github.com/onsi/gomega"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"

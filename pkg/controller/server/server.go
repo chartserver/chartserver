@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	chartserverclientv1beta1 "github.com/charthq/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1"
+	chartserverclientv1beta1 "github.com/chartserver/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1"
 	"github.com/ghodss/yaml"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"

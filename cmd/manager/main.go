@@ -20,9 +20,9 @@ import (
 	"flag"
 	"os"
 
-	"github.com/charthq/chartserver/pkg/apis"
-	"github.com/charthq/chartserver/pkg/controller"
-	"github.com/charthq/chartserver/pkg/webhook"
+	"github.com/chartserver/chartserver/pkg/apis"
+	"github.com/chartserver/chartserver/pkg/controller"
+	"github.com/chartserver/chartserver/pkg/webhook"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 	"sigs.k8s.io/controller-runtime/pkg/client/config"
 	"sigs.k8s.io/controller-runtime/pkg/manager"

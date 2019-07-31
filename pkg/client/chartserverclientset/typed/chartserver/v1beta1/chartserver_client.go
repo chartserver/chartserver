@@ -18,8 +18,8 @@ limitations under the License.
 package v1beta1
 
 import (
-	v1beta1 "github.com/charthq/chartserver/pkg/apis/chartserver/v1beta1"
-	"github.com/charthq/chartserver/pkg/client/chartserverclientset/scheme"
+	v1beta1 "github.com/chartserver/chartserver/pkg/apis/chartserver/v1beta1"
+	"github.com/chartserver/chartserver/pkg/client/chartserverclientset/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
 )

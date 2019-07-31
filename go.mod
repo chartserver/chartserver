@@ -1,15 +1,13 @@
-module github.com/charthq/chartserver
+module github.com/chartserver/chartserver
 
 go 1.12
 
 require (
-	github.com/Masterminds/semver v1.4.2 // indirect
 	github.com/blang/semver v3.5.1+incompatible
-	github.com/cyphar/filepath-securejoin v0.2.2 // indirect
+	github.com/charthq/chartserver v0.0.0-20190731143128-08f49232ad51 // indirect
 	github.com/ghodss/yaml v1.0.0
 	github.com/gin-gonic/gin v1.4.0
 	github.com/gizak/termui/v3 v3.1.0
-	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/hashicorp/go-multierror v1.0.0
 	github.com/mholt/archiver v3.1.1+incompatible
 	github.com/onsi/gomega v1.5.0

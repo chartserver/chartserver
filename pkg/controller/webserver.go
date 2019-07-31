@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/charthq/chartserver/pkg/controller/server"
+	"github.com/chartserver/chartserver/pkg/controller/server"
 	"k8s.io/client-go/rest"
 )
 

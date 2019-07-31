@@ -18,7 +18,7 @@ limitations under the License.
 package chartserverclientset
 
 import (
-	chartserverv1beta1 "github.com/charthq/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1"
+	chartserverv1beta1 "github.com/chartserver/chartserver/pkg/client/chartserverclientset/typed/chartserver/v1beta1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
