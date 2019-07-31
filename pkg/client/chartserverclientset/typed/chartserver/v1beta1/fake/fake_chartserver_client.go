@@ -27,10 +27,6 @@ type FakeChartserverV1beta1 struct {
 	*testing.Fake
 }
 
-func (c *FakeChartserverV1beta1) Charts(namespace string) v1beta1.ChartInterface {
-	return &FakeCharts{c, namespace}
-}
-
 func (c *FakeChartserverV1beta1) ChartVersions(namespace string) v1beta1.ChartVersionInterface {
 	return &FakeChartVersions{c, namespace}
 }

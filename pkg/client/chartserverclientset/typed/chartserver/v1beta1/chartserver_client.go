@@ -26,17 +26,12 @@ import (
 
 type ChartserverV1beta1Interface interface {
 	RESTClient() rest.Interface
-	ChartsGetter
 	ChartVersionsGetter
 }
 
 // ChartserverV1beta1Client is used to interact with features provided by the chartserver.io group.
 type ChartserverV1beta1Client struct {
 	restClient rest.Interface
-}
-
-func (c *ChartserverV1beta1Client) Charts(namespace string) ChartInterface {
-	return newCharts(c, namespace)
 }
 
 func (c *ChartserverV1beta1Client) ChartVersions(namespace string) ChartVersionInterface {

@@ -1,0 +1,5 @@
+image:
+  repository: chartserver/chartserver-manager
+  tag: alpha
+  pullPolicy: IfNotPresent
+

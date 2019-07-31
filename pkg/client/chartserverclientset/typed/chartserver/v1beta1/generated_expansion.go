@@ -17,6 +17,4 @@ limitations under the License.
 
 package v1beta1
 
-type ChartExpansion interface{}
-
 type ChartVersionExpansion interface{}
