@@ -61,3 +61,16 @@ CLIENT_GEN=$(shell go env GOPATH)/bin/client-gen
 else
 CLIENT_GEN=$(shell which client-gen)
 endif
+
+.PHONY: snapshot-release
+snapshot-release: build-snapshot-release
+	docker push chartserver/chartserver-manager:alpha
+
+.PHONY: build-snapshot-release
+build-snapshot-release:
+	curl -sL https://git.io/goreleaser | bash -s -- --rm-dist --snapshot --config deploy/.goreleaser.snapshot.yml
+
+.PHONY: release
+release: export GITHUB_TOKEN=$$GITHUB_TOKEN_CHARTSERVER
+release:
+	curl -sL https://git.io/goreleaser | bash -s -- --rm-dist --config deploy/.goreleaser.yml
