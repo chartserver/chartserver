@@ -1,6 +1,13 @@
 
+<p align="center">
+  <h3 align="center">ChartServer</h3>
+  <p align="center">The easiest way to host your own Helm chart repository.</p>
+</p>
 
-ChartServer is an in-cluster Helm Chart repository that maintains and serves an index of Helm charts. ChartServer uses Custom Resource Definitions (CRDs) to deploy new Charts and Chart Versions.
+---
+
+ChartServer is self-hosted, Kubernetes-native Helm Chart repository. ChartServer's responsibility is to maintain and serve an index of Helm charts that are available to install.
+
 
 # Quick Start
 
@@ -9,58 +16,48 @@ ChartServer is an in-cluster Helm Chart repository that maintains and serves an 
 Deploy the ChartServer operator to a cluster:
 
 ```shell
-helm repo add chartserver https://chart.sh/charts
+helm repo add chartserver https://chartserver.io/charts
 helm install chartserver/chartserver
 ```
 
 or
 
 ```shell
-kubectl apply -f https://get.chart.sh
-```
-
-### Create a Chart
-A chart is not an installable chart. A chart will not be installable until at least 1 chart version has been deployed.
-
-To create a chart, write a YAML descriptor of the chart:
-
-```yaml
-apiVersion: chart.sh/v1beta1
-kind: Chart
-metadata:
-  name: sample-chart
-spec:
-  name: my-chart-name
-  location:
-    download:
-      uri: https://something
-```
-
-Now, `kubectl apply -f` this new file. You can verify it worked with:
-
-```shell
-kubectl get charts.chart.sh
+kubectl apply -f https://get.chartserver.io
 ```
 
 ### Deploy a Chart Version
 
+We strongly encourage using [HelmReleaser](https://helmreleaser.io) to automate the work required to release a Helm chart. ChartServer is fully integrated into the HelmReleaser workflow.
+
 Create the first chart version:
 
 ```yaml
-apiVersion: chart.sh/v1beta1
+apiVersion: chartserver.io/v1beta1
 kind: ChartVersion
 metadata:
   name: sample-chart
 spec:
   name: my-chart-name
-  apPVersion: 1.0.0
-  chartVersion: 0.1.0
+  appVersion: 0.0.2
+  chartVersion: 0.0.2
+  created: "2019-07-31T14:26:20Z"
+  description: A Helm chart for Kubernetes
+  digest: b388d25a08ab7c9fe9ea20fe19165dcf8e53689e4ae369d13c9140d2a6a047ef
+  home: "https://github.com/my/repo"
+  icon: ""
+  maintainers:
+    - "Somebody <somebody@gmail.com>"
+  sources:
+    - https://github.com/my/repo
+  urls:
+  - https://github.com/my/repo/releases/download/v0.0.2/my-chart-0.0.2.tgz
 ```
 
 Deploy this YAML using `kubectl` and list chart versions:
 
 ```
-kubectl get chartversions.chart.sh
+kubectl get chartversions.chartserver.io
 ```
 
 ### Install
