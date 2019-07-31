@@ -1,0 +1,19 @@
+apiVersion: chartserver.io/v1beta1
+kind: ChartVersion
+metadata:
+  name: sample-chartversion
+spec:
+  appVersion: 0.0.1
+  chartVersion: 0.0.1
+  version: 0.0.1
+  created: 2019-04-01T16:23:20-0700
+  description: A hello world helm chart
+  digest: ""
+  home: https://github.com/charthq/hello-world
+  maintainers:
+    - Marc Campbell <marc.e.campbell@gmail.com>
+  name: Hello World
+  sources:
+    - https://github.com/charthq/hello-world
+  urls:
+    - https://technosophos.github.io/tscharts/alpine-0.1.0.tgz

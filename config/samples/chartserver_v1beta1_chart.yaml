@@ -1,0 +1,6 @@
+apiVersion: chartserver.io/v1beta1
+kind: Chart
+metadata:
+  name: sample-chart
+spec:
+  name: hello-world

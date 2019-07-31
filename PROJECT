@@ -1,0 +1,3 @@
+version: "1"
+domain: chartserer.io
+repo: github.com/charthq/chartserver
