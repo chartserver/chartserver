@@ -36,7 +36,10 @@ spec:
           name: webhook-server
           protocol: TCP
         - containerPort: 8000
-          name: chartserver
+          name: http
+          protocol: TCP
+        - containerPort: 8443
+          name: https
           protocol: TCP
         resources:
           limits:

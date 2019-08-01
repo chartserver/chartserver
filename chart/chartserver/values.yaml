@@ -3,3 +3,9 @@ image:
   tag: alpha
   pullPolicy: IfNotPresent
 
+service:
+  type: LoadBalancer
+  port: 80
+  https:
+    enabled: false
+    port: 443
