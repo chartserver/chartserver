@@ -37,3 +37,5 @@ kubectl apply -f ./path/to.yaml
 ```
 
 And the chart will be available in ChartServer for others to install.
+
+Note that ChartServer doesn't manage the binary itself for you. You must provide this somewhere else (GitHub releases is a good option), and reference it in your ChartVersion manifest.

@@ -28,7 +28,7 @@ kubectl apply -f https://get.chartserver.io
 
 ### Deploy a Chart Version
 
-We strongly encourage using [HelmReleaser](https://helmreleaser.io) to automate the work required to release a Helm chart. ChartServer is fully integrated into the HelmReleaser workflow.
+We strongly encourage using [HelmReleaser](https://helmreleaser.com) to automate the work required to release a Helm chart. ChartServer is fully integrated into the HelmReleaser workflow.
 
 Create the first chart version:
 

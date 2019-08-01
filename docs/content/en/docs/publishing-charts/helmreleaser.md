@@ -5,4 +5,4 @@ title: Publishing with HelmReleaser
 weight: 30020
 ---
 
-For a complete end-to-end workflow that creates and pubishes Helm charts, we recommend using [HelmReleaser](https://helmreleaser.io) and it's built-in integration with ChartServer.
+For a complete end-to-end workflow that creates and pubishes Helm charts, we recommend using [HelmReleaser](https://helmreleaser.com) and it's built-in integration with ChartServer.
